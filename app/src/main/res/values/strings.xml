@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Toast Lab</string>
+    <string name="top_left_view">Un</string>
+    <string name="top_right_view">Deux</string>
+    <string name="bottom_left_view">Trois</string>
+    <string name="bottom_right_view">Quatre</string>
+</resources>
