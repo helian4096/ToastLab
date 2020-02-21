@@ -37,10 +37,6 @@ public class MainActivity extends AppCompatActivity {
         bottomRight.setOnClickListener(x);
         topLeft.setOnClickListener(x);
         topRight.setOnClickListener(x);
-        editor.putInt((String)(topLeft.getText()), 0);
-        editor.putInt((String)(topRight.getText()), 0);
-        editor.putInt((String)(bottomLeft.getText()), 0);
-        editor.putInt((String)(bottomRight.getText()), 0);
         editor.apply();
         context = getApplicationContext();
         toastMessage = "Hello, toast failed!";
@@ -71,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             TextView text = (TextView)v;
-            int x = sharedPref.getInt((String)(text.getText()), -1);
+            int x = sharedPref.getInt((String)(text.getText()), 0);
             x++;
             editor.putInt((String)(text.getText()), x);
             editor.apply();
